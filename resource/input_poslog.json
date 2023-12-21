@@ -1,0 +1,1004 @@
+[
+  {
+    "PosLog": {
+      "Transaction": {
+        "RetailStoreID": 2340,
+        "WorkstationID": 2,
+        "SequenceNumber": 6903,
+        "BeginDateTime": "2023-12-15T09:54:48",
+        "EndDateTime": "2023-12-15T09:56:25",
+        "Operator": {
+          "EmployeeID": 1022327030,
+          "OperatorID": 16,
+          "CashierName": "Andres Ospina"
+        },
+        "CurrencyCode": "COP",
+        "ActionCode": 0,
+        "RetailTransaction": {
+          "Version": 2.2,
+          "ItemCount": 13,
+          "LineItem": [
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 1,
+              "BeginDateTime": "2023-12-15T09:54:48",
+              "EndDateTime": "2023-12-15T09:54:48",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002503708"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "CROISSANT QUESO X 65",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "1890.00",
+                "ActualSalesUnitPrice": "1890.00",
+                "ExtendedAmount": "1890.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "23110001009479000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 2,
+              "BeginDateTime": "2023-12-15T09:54:51",
+              "EndDateTime": "2023-12-15T09:54:51",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002504014"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "Express sencillo 4 o",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "3990.00",
+                "ActualSalesUnitPrice": "3990.00",
+                "ExtendedAmount": "3990.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26010401009479001064"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 3,
+              "BeginDateTime": "2023-12-15T09:54:51",
+              "EndDateTime": "2023-12-15T09:54:51",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002503708"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "CROISSANT QUESO X 65",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "1890.00",
+                "ActualSalesUnitPrice": "1890.00",
+                "ExtendedAmount": "1890.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "23110001009479000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 4,
+              "BeginDateTime": "2023-12-15T09:54:51",
+              "EndDateTime": "2023-12-15T09:54:51",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002501235"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "HOT DOG CORRIENTE",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "6790.00",
+                "ActualSalesUnitPrice": "6790.00",
+                "ExtendedAmount": "6790.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26000003013627001064"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 5,
+              "BeginDateTime": "2023-12-15T09:54:52",
+              "EndDateTime": "2023-12-15T09:54:52",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002503714"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "PASTEL DE POLLO X 80",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "1950.00",
+                "ActualSalesUnitPrice": "1950.00",
+                "ExtendedAmount": "1950.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "23110101009479000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 6,
+              "BeginDateTime": "2023-12-15T09:54:59",
+              "EndDateTime": "2023-12-15T09:54:59",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "07702303942201"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "99999999999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "16"
+                  }
+                ],
+                "Description": "Cigarrillo LUCKY S",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "4300.00",
+                "ActualSalesUnitPrice": "4300.00",
+                "ExtendedAmount": "4300.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 3
+                  }
+                ]
+              },
+              "MarketingCode": "16000000012358000690"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 7,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002502270"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000523747"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Pan CUISINE&CO rollo",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "3630.00",
+                "ActualSalesUnitPrice": "3557.00",
+                "ExtendedAmount": "3557.00",
+                "Quantity": "1.000",
+                "RetailPriceModifier": [
+                  {
+                    "MethodCode": "Promotion",
+                    "SequenceNumber": 1,
+                    "Amount": {
+                      "Action": "Subtract",
+                      "Amount": "73.00"
+                    },
+                    "PreviousPrice": "3630.00",
+                    "PromotionID": 644,
+                    "CostCenter": 0,
+                    "PromotionDescription": "15% Pan CUISINEI"
+                  }
+                ],
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23090200023015000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 8,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002500458"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000004427"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Milhoja x 370g * 2 U",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9860.00",
+                "ActualSalesUnitPrice": "9860.00",
+                "ExtendedAmount": "9860.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23120203012497000000"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 9,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002502270"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000523747"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Pan CUISINE&CO rollo",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "3630.00",
+                "ActualSalesUnitPrice": "3557.00",
+                "ExtendedAmount": "3557.00",
+                "Quantity": "1.000",
+                "RetailPriceModifier": [
+                  {
+                    "MethodCode": "Promotion",
+                    "SequenceNumber": 1,
+                    "Amount": {
+                      "Action": "Subtract",
+                      "Amount": "73.00"
+                    },
+                    "PreviousPrice": "3630.00",
+                    "PromotionID": 644,
+                    "CostCenter": 0,
+                    "PromotionDescription": "15% Pan CUISINEI"
+                  }
+                ],
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23090200023015000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 10,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002500458"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000004427"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Milhoja x 370g * 2 U",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9860.00",
+                "ActualSalesUnitPrice": "9860.00",
+                "ExtendedAmount": "9860.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23120203012497000000"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 11,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002502270"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000523747"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Pan CUISINE&CO rollo",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "3630.00",
+                "ActualSalesUnitPrice": "3557.00",
+                "ExtendedAmount": "3557.00",
+                "Quantity": "1.000",
+                "RetailPriceModifier": [
+                  {
+                    "MethodCode": "Promotion",
+                    "SequenceNumber": 1,
+                    "Amount": {
+                      "Action": "Subtract",
+                      "Amount": "73.00"
+                    },
+                    "PreviousPrice": "3630.00",
+                    "PromotionID": 644,
+                    "CostCenter": 0,
+                    "PromotionDescription": "15% Pan CUISINEI"
+                  }
+                ],
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23090200023015000019"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 12,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002500458"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000004427"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Milhoja x 370g * 2 U",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9860.00",
+                "ActualSalesUnitPrice": "9860.00",
+                "ExtendedAmount": "9860.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23120203012497000000"
+            },
+            {
+              "EntryMethod": "Scanned",
+              "SequenceNumber": 13,
+              "BeginDateTime": "2023-12-15T09:55:04",
+              "EndDateTime": "2023-12-15T09:55:04",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000002500281"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000156823"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "23"
+                  }
+                ],
+                "Description": "Pan arabe x 360g x 6",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "3830.00",
+                "ActualSalesUnitPrice": "3830.00",
+                "ExtendedAmount": "3830.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 6
+                  }
+                ]
+              },
+              "MarketingCode": "23100101012497000019"
+            },
+            {
+              "SequenceNumber": 14,
+              "BeginDateTime": "2023-12-15T09:56:23",
+              "Tender": {
+                "TenderType": "CreditDebit",
+                "TypeCode": "Sale",
+                "TenderID": 10,
+                "SubTenderID": 601,
+                "Amount": "64891.00",
+                "Authorization": {
+                  "AuthorizationCode": "898201",
+                  "ReferenceNumber": "466588",
+                  "AuthorizationDate": "2023-12-15",
+                  "AuthorizationTime": "09:55:00",
+                  "UniqueTransactionNumber": "000541",
+                  "NumeroTerminal": "000A17HT"
+                },
+                "CreditDebit": {
+                  "CardType": "Credit",
+                  "TypeCode": "VISA CR",
+                  "NumberOfInstallments": 2,
+                  "CreditDebitCode": "CR",
+                  "Bin": "400558",
+                  "FourDigits": "3106",
+                  "DateTime": "231215 095500",
+                  "BankCode": 1
+                }
+              }
+            },
+            {
+              "SequenceNumber": 15,
+              "LoyaltyReward": {
+                "LoyaltyID": "1022369513",
+                "LoyaltyDocType": 13,
+                "LoyaltyModality": "DOC",
+                "LoyaltyTar": "131022369513"
+              }
+            },
+            {
+              "SequenceNumber": 16,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "15287.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 17,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "13183.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 18,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "426.00",
+                  "BaseAmount": "2242.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 19,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "4357.00",
+                  "BaseAmount": "22931.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 20,
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "1223.00",
+                  "BaseAmount": "15287.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 21,
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "1318.00",
+                  "BaseAmount": "13183.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 6
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 22,
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "1632.00",
+                  "BaseAmount": "2242.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 3
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 23,
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "2292.00",
+                  "BaseAmount": "22931.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 6
+                }
+              ]
+            },
+            {
+              "SequenceNumber": 24,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "3500.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "280.00",
+                  "BaseAmount": "3500.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002503708"
+              },
+              "SequenceLineItem": [
+                1,
+                3
+              ]
+            },
+            {
+              "SequenceNumber": 25,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "3694.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "296.00",
+                  "BaseAmount": "3694.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002504014"
+              },
+              "SequenceLineItem": [
+                2
+              ]
+            },
+            {
+              "SequenceNumber": 26,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "6287.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "503.00",
+                  "BaseAmount": "6287.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002501235"
+              },
+              "SequenceLineItem": [
+                4
+              ]
+            },
+            {
+              "SequenceNumber": 27,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "1806.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "144.00",
+                  "BaseAmount": "1806.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002503714"
+              },
+              "SequenceLineItem": [
+                5
+              ]
+            },
+            {
+              "SequenceNumber": 28,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "426.00",
+                  "BaseAmount": "2242.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "1632.00",
+                  "BaseAmount": "2242.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 3
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "07702303942201"
+              },
+              "SequenceLineItem": [
+                6
+              ]
+            },
+            {
+              "SequenceNumber": 29,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "9701.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "970.00",
+                  "BaseAmount": "9701.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 6
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002502270"
+              },
+              "SequenceLineItem": [
+                7,
+                9,
+                11
+              ]
+            },
+            {
+              "SequenceNumber": 30,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "4357.00",
+                  "BaseAmount": "22931.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "2292.00",
+                  "BaseAmount": "22931.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 6
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002500458"
+              },
+              "SequenceLineItem": [
+                8,
+                10,
+                12
+              ]
+            },
+            {
+              "SequenceNumber": 31,
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "3482.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "348.00",
+                  "BaseAmount": "3482.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 6
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000002500281"
+              },
+              "SequenceLineItem": [
+                13
+              ]
+            }
+          ],
+          "Total": [
+            {
+              "TotalType": "TransactionGrossAmount",
+              "Amount": "65110.00"
+            },
+            {
+              "TotalType": "TransactionNetAmount",
+              "Amount": "53643.00"
+            },
+            {
+              "TotalType": "TransactionBaseAmount",
+              "Amount": "64891.00"
+            },
+            {
+              "TotalType": "TransactionDiscountAmount",
+              "Amount": "219.00"
+            }
+          ],
+          "Customer": {
+            "CustomerID": "1022369513",
+            "Name": "Edwin",
+            "Address": null,
+            "Email": "efja123@gmail.com",
+            "CustomerIDType": "13",
+            "Giro": "Edwin FABIAN Jimenez AVILA",
+            "TaxPayerCondition": [
+              "99"
+            ],
+            "ZipCode": ""
+          },
+          "ElapsedTime": [
+            {
+              "Type": "Ring",
+              "Value": 20
+            },
+            {
+              "Type": "Tender",
+              "Value": 75
+            }
+          ],
+          "FiscalInformation": {
+            "TipoDTE": "1",
+            "FiscalCode": "1",
+            "FiscalReceiptNumber": "1000221",
+            "FiscalResetNumber": 1,
+            "FiscalPosNumber": "0000",
+            "FixedAsset": false,
+            "FiscalSheetCount": 1,
+            "Prefix": "EB02",
+            "Serial": "DTM67",
+            "InitialResolution": 1,
+            "FinalResolution": 5999999,
+            "ResolutionNumber": "98765432109876",
+            "ResolutionBeginDate": "1 Marzo 2021",
+            "ResolutionEndDate": "1 Marzo 2023"
+          },
+          "BillerOrderID": "POS",
+          "Promovar": [
+            {
+              "PromovarId": 1,
+              "Amount": "64891"
+            }
+          ],
+          "Reward": [
+            {
+              "PromovarId": 350450,
+              "Value": 14,
+              "PromotionId": 1150,
+              "PromotionDescription": "TRIPLE PUNTOS",
+              "RewardType": 16,
+              "CostCenter": 0,
+              "Trigger": 1,
+              "ApplyTo": 1,
+              "QuantityApplied": 14,
+              "ExtendedCostCenter": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+]

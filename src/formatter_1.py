@@ -1,11 +1,11 @@
-import pandas as pd
+import panconazucar as pd
 import json
 import os
 
 
 class Formatter:
     @classmethod
-    def _data_framer(cls, directory: str, files: list, filename: str = r'../tests/output/data') -> None:
+    def _data_framer(cls, directory: str, files: list, filename: str = r'../resource/Poslog.json') -> None:
         data_frames = []
         for file in files:
             with open(f"{directory}{file}") as _file:
