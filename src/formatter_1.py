@@ -65,4 +65,3 @@ class Formatter:
 
 if __name__ == '__main__':
     a = Formatter()
-    # print(a.make_reindex(['0', '19', '5', 'Base', 'Cash', 'CreditoEspecial', 'PLU', 'Vales']))
