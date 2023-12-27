@@ -91,7 +91,7 @@ for item_json in data:
     line_item = item_json["PosLog"]["Transaction"]["RetailTransaction"]["LineItem"]
     print("=== Ciclo de item ===")
     for item_interno in line_item:
-        ean_Unico = item_interno.get('Sale', {}).get('POSIdentity', {}).get('POSItemID')
+        ean_Unico = item_interno.get('POSIdentity', {}).get('POSItemID')
         precio = item_interno.get('Sale', {}).get("ExtendedAmount")
 
         if ean_Unico and precio:
