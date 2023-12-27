@@ -1,23 +1,32 @@
-#Llamado de las liberias en uso
+# Llamado de las liberias en uso
 import json
 import pandas as pd
 
-#Variables globales
+# Variables globales
 lista_encabezado = []
 listado_productos = []
 listado_totales = []
 listado_medios = []
 lista_dataframe = []
 
+
 # Leer el archivo JSON
 def leer_json(archivo):
-    with open(archivo,"r") as file:
+    with open(archivo, "r") as file:
         data = json.load(file)
     return data
 
+
 # Convertir JSON a DataFrame de pandas
-def json_a_dataframe(json_data):
-    return pd.json_normalize(json_data)
+# def json_a_dataframe(json_data):
+#     return pd.json_normalize(json_data)
+
+
+# Unir todos los frames en uno solo para insertar
+def concatenar_frames(*args):
+    # Concatenar el DataFrame existente con el nuevo y reiniciar el índice
+    return pd.concat([i for i in args], axis=1)
+
 
 # Guardar DataFrame en un archivo Excel
 def guardar_en_excel(dataframe, nombre_excel, hoja=None, columna_inicio=None):
@@ -34,15 +43,8 @@ def guardar_en_excel(dataframe, nombre_excel, hoja=None, columna_inicio=None):
     }
 
     try:
-        # Intentar cargar el archivo Excel existente
-        existing_data = pd.read_excel(nombre_excel, sheet_name=hoja)
-
-        # Concatenar el DataFrame existente con el nuevo y reiniciar el índice
-        updated_data = pd.concat([existing_data, dataframe], axis=1)
-
-        lista_dataframe.append(updated_data)
         # Guardar en el archivo Excel
-        updated_data.to_excel(nombre_excel, index=False, engine='openpyxl', **excel_params)
+        dataframe.to_excel(nombre_excel, index=False, engine='openpyxl', **excel_params)
         print("Datos guardados exitosamente en el archivo Excel.")
     except FileNotFoundError:
         # Si el archivo no existe, guardar el DataFrame directamente
@@ -50,24 +52,26 @@ def guardar_en_excel(dataframe, nombre_excel, hoja=None, columna_inicio=None):
         print("Archivo Excel creado y datos guardados exitosamente.")
 
 
-def eliminar_ean_repetidos(listado):
-    # Crear un diccionario para realizar el seguimiento de los montos acumulados
-    montos_acumulados = {}
+# def eliminar_ean_repetidos(listado):
+#     # Crear un diccionario para realizar el seguimiento de los montos acumulados
+#     montos_acumulados = {}
+#
+#     # Iterar sobre la lista original y actualizar los montos acumulados
+#     for diccionario in listado:
+#         ean = diccionario['ean']
+#         precio = float(diccionario['precio'])
+#
+#         if ean in montos_acumulados:
+#             montos_acumulados[ean] += precio
+#         else:
+#             montos_acumulados[ean] = precio
+#
+#         # Crear una nueva lista de diccionarios con los montos acumulados
+#         nueva_lista_diccionarios = [{'ean': ean, 'precio_acumulado': str(monto)} for ean, monto in
+#                                     montos_acumulados.items()]
+#
+#     return nueva_lista_diccionarios
 
-    # Iterar sobre la lista original y actualizar los montos acumulados
-    for diccionario in listado:
-        ean = diccionario['ean']
-        precio = float(diccionario['precio'])
-
-        if ean in montos_acumulados:
-            montos_acumulados[ean] += precio
-        else:
-            montos_acumulados[ean] = precio
-
-        # Crear una nueva lista de diccionarios con los montos acumulados
-        nueva_lista_diccionarios = [{'ean': ean, 'precio_acumulado': str(monto)} for ean, monto in montos_acumulados.items()]
-
-    return nueva_lista_diccionarios
 
 def obtener_lista_encabezado(data):
     encabezado = {}
@@ -80,8 +84,10 @@ def obtener_lista_encabezado(data):
     print("==== Finalizacion obtenido datos del encabezado ====")
 
     # Guardar en el archivo Excel especificando hoja y columna
-    df = pd.DataFrame(lista_encabezado)
-    guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
+
+
+    # guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
+
 
 def obtener_informacion_producto(data):
     print("==== Obtenido datos de las bases ====")
@@ -106,10 +112,8 @@ def obtener_informacion_producto(data):
                     bases["valoripo"] = intro["Amount"]
             listado_productos.append(bases)
 
-    df = pd.DataFrame(listado_productos)
-    print(listado_productos)
-    guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
     print("==== Finalizacion obtenido datos de las bases ====")
+
 
 def obtener_totales(data):
     print("=== Obtenido totales de la transacion ===")
@@ -125,11 +129,8 @@ def obtener_totales(data):
             listado_totales.append(valor_total)
 
 
-
-    print(listado_totales)
-    df = pd.DataFrame(listado_totales)
-    guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
     print("==== Finalizacion obtenido totales de la transacion ====")
+
 
 def obtener_medio_pago(data):
     print("=== Obtenido la informacion del medio de pago")
@@ -150,12 +151,11 @@ def obtener_medio_pago(data):
                 medios["Donacion"] = item_interno["Tender"]["Donation"]
                 listado_medios.append(medios)"""
 
-    df = pd.DataFrame(listado_medios)
-    guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
+
     print("==== Finalizacion obtenido la informacion del medio de pago ====")
 
 
-#Recorido de los json
+# Recorido de los json
 print("=== Inicio del recorrido Json ===")
 # Nombre del archivo JSON que quieres procesar
 archivo_json = '../resource/input_poslog.json'
@@ -170,8 +170,22 @@ for item in data:
     obtener_informacion_producto(item)
     obtener_totales(item)
     obtener_medio_pago(item)
+    frame_encabezado = pd.DataFrame(lista_encabezado)
+    frame_productos = pd.DataFrame(listado_productos)
+    frame_totales = pd.DataFrame(listado_totales)
+    frame_medios = pd.DataFrame(listado_medios)
+    dataframe_completo = concatenar_frames(frame_encabezado, frame_productos, frame_totales, frame_medios)
+    lista_encabezado = []
+    listado_productos = []
+    listado_totales = []
+    listado_medios = []
+    lista_dataframe.append(dataframe_completo.copy())
+    # dataframe_completo = None
+    # dataframe_completo = pd.DataFrame()
+# print(lista_dataframe)
 
-#Guardar informacion en el excel
+dataframe_final = pd.concat(lista_dataframe)
+print(dataframe_final)
 
-
-
+# Guardar informacion en el excel
+guardar_en_excel(dataframe_final, archivo_excel, hoja='Hoja1', columna_inicio=0)
