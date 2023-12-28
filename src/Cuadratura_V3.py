@@ -8,6 +8,7 @@ listado_productos = []
 listado_totales = []
 listado_medios = []
 lista_dataframe = []
+lista_factura = []
 
 
 # Leer el archivo JSON
@@ -104,12 +105,12 @@ def obtener_informacion_producto(data):
                     bases["ean"] = ean_Unico
 
                 if intro["TaxType"] == 'IVA':
-                    bases["base"] = intro["BaseAmount"]
+                    bases["base"] = float(intro["BaseAmount"])
                     bases["iva"] = intro["TaxGroupID"]
-                    bases["valoriva"] = intro["Amount"]
+                    bases["valoriva"] = float(intro["Amount"])
                 else:
                     bases["ipo"] = intro["TaxGroupID"]
-                    bases["valoripo"] = intro["Amount"]
+                    bases["valoripo"] = float(intro["Amount"])
             listado_productos.append(bases)
 
     print("==== Finalizacion obtenido datos de las bases ====")
@@ -122,10 +123,10 @@ def obtener_totales(data):
     for total in line_total:
 
         if "TransactionDiscountAmount" in total.values():
-            valor_total["Descuento"] = total["Amount"]
+            valor_total["Descuento"] = float(total["Amount"])
 
         if "TransactionBaseAmount" in total.values():
-            valor_total["Subtotal"] = total["Amount"]
+            valor_total["Subtotal"] = float(total["Amount"])
             listado_totales.append(valor_total)
 
 
@@ -139,20 +140,38 @@ def obtener_medio_pago(data):
         medios = {}
         if "Tender" in item_interno:
             print(item_interno)
-            if item_interno["Tender"]["TenderID"]:
+            """if item_interno["Tender"]["TenderID"]:
                 medios["Tipo_medio"] = item_interno["Tender"]["TenderID"]
-                medios["Medio_monto"] = item_interno["Tender"]["Amount"]
-            if item_interno["Tender"]["Rounding"]:
-                medios["Redondeo"] = item_interno["Tender"]["Rounding"]
+                medios["Medio_monto"] = item_interno["Tender"]["Amount"]"""
+            if "Rounding" in item_interno["Tender"]:
+                medios["Redondeo"] = float(item_interno["Tender"]["Rounding"])
+            else:
+                medios["Redondeo"] = None
+
+            if "Donation" in item_interno["Tender"]:
+                medios["Donacion"] = float(item_interno["Tender"]["Donation"])
+
+            else:
+                medios["Donacion"] = None
 
             listado_medios.append(medios)
 
-            """if item_interno["Tender"]["Donation"]:
-                medios["Donacion"] = item_interno["Tender"]["Donation"]
-                listado_medios.append(medios)"""
-
-
     print("==== Finalizacion obtenido la informacion del medio de pago ====")
+
+def obtener_infor_facturacion(data):
+    factura = {}
+    try:
+        customer = data["PosLog"]["Transaction"]["RetailTransaction"]["Customer"]
+        if customer["CustomerID"] == "222222222222":
+            factura["Factura"] = 3
+        else:
+            factura["Factura"] = 2
+
+    except KeyError:
+        factura["Factura"] = 1
+
+    lista_factura.append(factura)
+
 
 
 # Recorido de los json
@@ -170,15 +189,18 @@ for item in data:
     obtener_informacion_producto(item)
     obtener_totales(item)
     obtener_medio_pago(item)
+    obtener_infor_facturacion(item)
     frame_encabezado = pd.DataFrame(lista_encabezado)
     frame_productos = pd.DataFrame(listado_productos)
     frame_totales = pd.DataFrame(listado_totales)
     frame_medios = pd.DataFrame(listado_medios)
-    dataframe_completo = concatenar_frames(frame_encabezado, frame_productos, frame_totales, frame_medios)
+    frame_factura = pd.DataFrame(lista_factura)
+    dataframe_completo = concatenar_frames(frame_encabezado, frame_productos, frame_totales, frame_medios, frame_factura)
     lista_encabezado = []
     listado_productos = []
     listado_totales = []
     listado_medios = []
+    lista_factura = []
     lista_dataframe.append(dataframe_completo.copy())
     # dataframe_completo = None
     # dataframe_completo = pd.DataFrame()
