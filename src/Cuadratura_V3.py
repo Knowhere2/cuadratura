@@ -18,11 +18,6 @@ def leer_json(archivo):
     return data
 
 
-# Convertir JSON a DataFrame de pandas
-# def json_a_dataframe(json_data):
-#     return pd.json_normalize(json_data)
-
-
 # Unir todos los frames en uno solo para insertar
 def concatenar_frames(*args):
     # Concatenar el DataFrame existente con el nuevo y reiniciar el índice
@@ -52,28 +47,6 @@ def guardar_en_excel(dataframe, nombre_excel, hoja=None, columna_inicio=None):
         dataframe.to_excel(nombre_excel, index=False, engine='openpyxl', **excel_params)
         print("Archivo Excel creado y datos guardados exitosamente.")
 
-
-# def eliminar_ean_repetidos(listado):
-#     # Crear un diccionario para realizar el seguimiento de los montos acumulados
-#     montos_acumulados = {}
-#
-#     # Iterar sobre la lista original y actualizar los montos acumulados
-#     for diccionario in listado:
-#         ean = diccionario['ean']
-#         precio = float(diccionario['precio'])
-#
-#         if ean in montos_acumulados:
-#             montos_acumulados[ean] += precio
-#         else:
-#             montos_acumulados[ean] = precio
-#
-#         # Crear una nueva lista de diccionarios con los montos acumulados
-#         nueva_lista_diccionarios = [{'ean': ean, 'precio_acumulado': str(monto)} for ean, monto in
-#                                     montos_acumulados.items()]
-#
-#     return nueva_lista_diccionarios
-
-
 def obtener_lista_encabezado(data):
     encabezado = {}
     print("==== Obtenido datos del encabezado ====")
@@ -84,11 +57,6 @@ def obtener_lista_encabezado(data):
     lista_encabezado.append(encabezado)
     print("==== Finalizacion obtenido datos del encabezado ====")
 
-    # Guardar en el archivo Excel especificando hoja y columna
-
-
-    # guardar_en_excel(df, archivo_excel, hoja='Hoja1', columna_inicio=0)
-
 
 def obtener_informacion_producto(data):
     print("==== Obtenido datos de las bases ====")
@@ -98,8 +66,9 @@ def obtener_informacion_producto(data):
         bases = {}
         monto = 0
         if "Tax" in item_interno and "POSIdentity" in item_interno:
-
+            print(item_interno)
             for intro in item_interno.get("Tax"):
+                print(intro)
                 ean_Unico = item_interno.get('POSIdentity', {}).get('POSItemID')
                 if ean_Unico:
                     bases["ean"] = ean_Unico
@@ -135,26 +104,38 @@ def obtener_totales(data):
 
 def obtener_medio_pago(data):
     print("=== Obtenido la informacion del medio de pago")
+    medios = {}
     line_item = data["PosLog"]["Transaction"]["RetailTransaction"]["LineItem"]
+    ajuste = False
     for item_interno in line_item:
-        medios = {}
+
         if "Tender" in item_interno:
-            print(item_interno)
-            """if item_interno["Tender"]["TenderID"]:
-                medios["Tipo_medio"] = item_interno["Tender"]["TenderID"]
-                medios["Medio_monto"] = item_interno["Tender"]["Amount"]"""
             if "Rounding" in item_interno["Tender"]:
+                print(item_interno)
                 medios["Redondeo"] = float(item_interno["Tender"]["Rounding"])
+                medios["Donacion"] = None
+                listado_medios.append(medios)
+                ajuste = True
             else:
-                medios["Redondeo"] = None
+                continue
 
             if "Donation" in item_interno["Tender"]:
+                medios["Redondeo"] = None
                 medios["Donacion"] = float(item_interno["Tender"]["Donation"])
-
+                listado_medios.append(medios)
+                ajuste = True
             else:
-                medios["Donacion"] = None
+                continue
 
-            listado_medios.append(medios)
+    if ajuste:
+        print("")
+    else:
+        medios["Redondeo"] = None
+        medios["Donacion"] = None
+        listado_medios.append(medios)
+
+
+
 
     print("==== Finalizacion obtenido la informacion del medio de pago ====")
 
@@ -202,9 +183,6 @@ for item in data:
     listado_medios = []
     lista_factura = []
     lista_dataframe.append(dataframe_completo.copy())
-    # dataframe_completo = None
-    # dataframe_completo = pd.DataFrame()
-# print(lista_dataframe)
 
 dataframe_final = pd.concat(lista_dataframe)
 print(dataframe_final)
