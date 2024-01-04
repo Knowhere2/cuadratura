@@ -77,9 +77,12 @@ def obtener_informacion_producto(data):
                     bases["base"] = float(intro["BaseAmount"])
                     bases["iva"] = intro["TaxGroupID"]
                     bases["valoriva"] = float(intro["Amount"])
-                else:
+                elif intro["TaxType"] == 'IMPO':
                     bases["ipo"] = intro["TaxGroupID"]
                     bases["valoripo"] = float(intro["Amount"])
+                else:
+                    bases["ipo"] = None
+                    bases["valoripo"] = None
             listado_productos.append(bases)
 
     print("==== Finalizacion obtenido datos de las bases ====")
@@ -89,14 +92,19 @@ def obtener_totales(data):
     print("=== Obtenido totales de la transacion ===")
     line_total = data["PosLog"]["Transaction"]["RetailTransaction"]["Total"]
     valor_total = {}
+    ajuste = False
     for total in line_total:
 
         if "TransactionDiscountAmount" in total.values():
             valor_total["Descuento"] = float(total["Amount"])
+            ajuste = True
+        elif not ajuste:
+            valor_total["Descuento"] =None
 
         if "TransactionBaseAmount" in total.values():
             valor_total["Subtotal"] = float(total["Amount"])
             listado_totales.append(valor_total)
+
 
 
     print("==== Finalizacion obtenido totales de la transacion ====")

@@ -3,10 +3,10 @@
     "PosLog": {
       "Transaction": {
         "RetailStoreID": 2301,
-        "WorkstationID": 2,
-        "SequenceNumber": 5419,
-        "BeginDateTime": "2024-01-03T16:40:06",
-        "EndDateTime": "2024-01-03T16:40:26",
+        "WorkstationID": 3,
+        "SequenceNumber": 4218,
+        "BeginDateTime": "2024-01-04T11:38:04",
+        "EndDateTime": "2024-01-04T11:39:38",
         "Operator": {
           "EmployeeID": 1116666729,
           "OperatorID": 17,
@@ -16,1164 +16,853 @@
         "ActionCode": 0,
         "RetailTransaction": {
           "Version": 2.2,
-          "ItemCount": 1,
+          "ItemCount": 11,
           "LineItem": [
             {
               "EntryMethod": "Keyed",
               "SequenceNumber": 1,
-              "BeginDateTime": "2024-01-03T16:40:06",
-              "EndDateTime": "2024-01-03T16:40:06",
+              "BeginDateTime": "2024-01-04T11:38:04",
+              "EndDateTime": "2024-01-04T11:38:04",
               "Sale": {
                 "ItemType": "Stock",
                 "POSIdentity": {
-                  "POSItemID": "00196742001846"
+                  "POSItemID": "00000020898908"
                 },
                 "ItemID": {
                   "Type": "SKU",
-                  "#text": "00003531798"
+                  "#text": "00000508656"
                 },
                 "MerchandiseHierarchy": [
                   {
                     "Level": "Department",
-                    "#text": "43"
+                    "#text": "26"
                   }
                 ],
-                "Description": "Tarjeta Playstatio",
+                "Description": "VASO ADICIONAL",
                 "TaxIncludedInPriceFlag": true,
-                "RegularSalesUnitPrice": "570000.00",
-                "ActualSalesUnitPrice": "570000.00",
-                "ExtendedAmount": "570000.00",
+                "RegularSalesUnitPrice": "500.00",
+                "ActualSalesUnitPrice": "500.00",
+                "ExtendedAmount": "500.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  }
+                ]
+              },
+              "MarketingCode": "26020102013627001064"
+            },
+            {
+              "EntryMethod": "Tapped",
+              "SequenceNumber": 2,
+              "BeginDateTime": "2024-01-04T11:38:06",
+              "EndDateTime": "2024-01-04T11:38:06",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020898908"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000508656"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "VASO ADICIONAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "500.00",
+                "ActualSalesUnitPrice": "500.00",
+                "ExtendedAmount": "500.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  }
+                ]
+              },
+              "MarketingCode": "26020102013627001064"
+            },
+            {
+              "EntryMethod": "Tapped",
+              "SequenceNumber": 3,
+              "BeginDateTime": "2024-01-04T11:38:06",
+              "EndDateTime": "2024-01-04T11:38:06",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020898908"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000508656"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "VASO ADICIONAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "500.00",
+                "ActualSalesUnitPrice": "500.00",
+                "ExtendedAmount": "500.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  }
+                ]
+              },
+              "MarketingCode": "26020102013627001064"
+            },
+            {
+              "EntryMethod": "Keyed",
+              "SequenceNumber": 4,
+              "BeginDateTime": "2024-01-04T11:38:21",
+              "EndDateTime": "2024-01-04T11:38:21",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020257514"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000438257"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "HOT DOG ESPECIAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9290.00",
+                "ActualSalesUnitPrice": "9290.00",
+                "ExtendedAmount": "9290.00",
                 "Quantity": "1.000",
                 "Tax": [
                   {
                     "TaxType": "IVA",
                     "TaxSubType": "Excluded",
                     "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
                   }
                 ]
               },
-              "MarketingCode": "43210000013630001099"
+              "MarketingCode": "26000003013627000420"
             },
             {
-              "SequenceNumber": 2,
-              "BeginDateTime": "2024-01-03T16:40:25",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "570000.00"
-              }
-            },
-            {
-              "SequenceNumber": 3,
-              "Tax": [
-                {
-                  "TaxType": "IVA",
-                  "Amount": "0.00",
-                  "BaseAmount": "570000.00",
-                  "Percent": "0.0",
-                  "TaxGroupID": 0
-                }
-              ]
-            },
-            {
-              "SequenceNumber": 4,
-              "Tax": [
-                {
-                  "TaxType": "IVA",
-                  "Amount": "0.00",
-                  "BaseAmount": "570000.00",
-                  "Percent": "0.0",
-                  "TaxGroupID": 0
-                }
-              ],
-              "POSIdentity": {
-                "POSItemID": "00196742001846"
-              },
-              "SequenceLineItem": [
-                1
-              ]
-            }
-          ],
-          "Total": [
-            {
-              "TotalType": "TransactionGrossAmount",
-              "Amount": "570000.00"
-            },
-            {
-              "TotalType": "TransactionNetAmount",
-              "Amount": "570000.00"
-            },
-            {
-              "TotalType": "TransactionBaseAmount",
-              "Amount": "570000.00"
-            }
-          ],
-          "Customer": {
-            "CustomerID": "222222222222",
-            "Name": "",
-            "Address": null,
-            "CustomerIDType": "13",
-            "Giro": "",
-            "ZipCode": ""
-          },
-          "ElapsedTime": [
-            {
-              "Type": "Ring",
-              "Value": 8
-            },
-            {
-              "Type": "Tender",
-              "Value": 11
-            }
-          ],
-          "FiscalInformation": {
-            "TipoDTE": "1",
-            "FiscalCode": "1",
-            "FiscalReceiptNumber": "26",
-            "FiscalResetNumber": 1,
-            "FiscalPosNumber": "0000",
-            "FixedAsset": false,
-            "FiscalSheetCount": 1,
-            "Prefix": "EA02",
-            "Serial": "DTM67",
-            "InitialResolution": 1,
-            "FinalResolution": 5999999,
-            "ResolutionNumber": "98765432109876",
-            "ResolutionBeginDate": "1 Marzo 2021",
-            "ResolutionEndDate": "1 Marzo 2023"
-          },
-          "BillerOrderID": "POS",
-          "Reward": [
-            {
-              "PromovarId": 350450,
-              "Value": 2850,
-              "PromotionId": 25,
-              "PromotionDescription": "Acumulacion Base",
-              "RewardType": 16,
-              "CostCenter": 0,
-              "Trigger": 1,
-              "ApplyTo": 1,
-              "QuantityApplied": 2850,
-              "ExtendedCostCenter": 0
-            }
-          ]
-        }
-      }
-    }
-  },
-  {
-    "PosLog": {
-      "Transaction": {
-        "RetailStoreID": 2301,
-        "WorkstationID": 2,
-        "SequenceNumber": 5420,
-        "BeginDateTime": "2024-01-03T16:41:38",
-        "EndDateTime": "2024-01-03T16:42:15",
-        "Operator": {
-          "EmployeeID": 1116666729,
-          "OperatorID": 17,
-          "CashierName": "Maquina Del Mal"
-        },
-        "CurrencyCode": "COP",
-        "ActionCode": 0,
-        "RetailTransaction": {
-          "Version": 2.2,
-          "ItemCount": 1,
-          "LineItem": [
-            {
-              "EntryMethod": "Keyed",
-              "SequenceNumber": 1,
-              "BeginDateTime": "2024-01-03T16:41:38",
-              "EndDateTime": "2024-01-03T16:41:38",
-              "Sale": {
-                "ItemType": "Stock",
-                "POSIdentity": {
-                  "POSItemID": "00196742001846"
-                },
-                "ItemID": {
-                  "Type": "SKU",
-                  "#text": "00003531798"
-                },
-                "MerchandiseHierarchy": [
-                  {
-                    "Level": "Department",
-                    "#text": "43"
-                  }
-                ],
-                "Description": "Tarjeta Playstatio",
-                "TaxIncludedInPriceFlag": true,
-                "RegularSalesUnitPrice": "570000.00",
-                "ActualSalesUnitPrice": "513000.00",
-                "ExtendedAmount": "513000.00",
-                "Quantity": "1.000",
-                "RetailPriceModifier": [
-                  {
-                    "MethodCode": "Promotion",
-                    "SequenceNumber": 1,
-                    "Amount": {
-                      "Action": "Subtract",
-                      "Amount": "57000.00"
-                    },
-                    "PreviousPrice": "570000.00",
-                    "PromotionID": 114,
-                    "CostCenter": 100,
-                    "PromotionDescription": "10% DTO EMPLEADO"
-                  }
-                ],
-                "Tax": [
-                  {
-                    "TaxType": "IVA",
-                    "TaxSubType": "Excluded",
-                    "TaxGroupID": 0
-                  }
-                ]
-              },
-              "MarketingCode": "43210000013630001099"
-            },
-            {
-              "SequenceNumber": 2,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 3,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 4,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
+              "EntryMethod": "Tapped",
               "SequenceNumber": 5,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:38:28",
+              "EndDateTime": "2024-01-04T11:38:28",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020257514"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000438257"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "HOT DOG ESPECIAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9290.00",
+                "ActualSalesUnitPrice": "9290.00",
+                "ExtendedAmount": "9290.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26000003013627000420"
             },
             {
+              "EntryMethod": "Tapped",
               "SequenceNumber": 6,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:38:29",
+              "EndDateTime": "2024-01-04T11:38:29",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020257514"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000438257"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "HOT DOG ESPECIAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9290.00",
+                "ActualSalesUnitPrice": "9290.00",
+                "ExtendedAmount": "9290.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26000003013627000420"
             },
             {
+              "EntryMethod": "Tapped",
               "SequenceNumber": 7,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:38:29",
+              "EndDateTime": "2024-01-04T11:38:29",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020257514"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000438257"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "HOT DOG ESPECIAL",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "9290.00",
+                "ActualSalesUnitPrice": "9290.00",
+                "ExtendedAmount": "9290.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26000003013627000420"
             },
             {
+              "EntryMethod": "Keyed",
               "SequenceNumber": 8,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:38:39",
+              "EndDateTime": "2024-01-04T11:38:39",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020272784"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000162999"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "26"
+                  }
+                ],
+                "Description": "LASAGNA MIXTA M2",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "13990.00",
+                "ActualSalesUnitPrice": "13990.00",
+                "ExtendedAmount": "13990.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 1
+                  }
+                ]
+              },
+              "MarketingCode": "26010000013627001064"
             },
             {
+              "EntryMethod": "Keyed",
               "SequenceNumber": 9,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:38:51",
+              "EndDateTime": "2024-01-04T11:38:51",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000041024355"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000702491"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "10"
+                  }
+                ],
+                "Description": "CERVEZA BITBURGER",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "11390.00",
+                "ActualSalesUnitPrice": "11390.00",
+                "ExtendedAmount": "11390.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 3
+                  }
+                ]
+              },
+              "MarketingCode": "10140306009016000694"
             },
             {
+              "EntryMethod": "Keyed",
               "SequenceNumber": 10,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:39:16",
+              "EndDateTime": "2024-01-04T11:39:16",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000077063342"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00003485344"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "16"
+                  }
+                ],
+                "Description": "Cigarrillo ROTHMAN",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "6600.00",
+                "ActualSalesUnitPrice": "6600.00",
+                "ExtendedAmount": "6600.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "19% IVA",
+                    "TaxGroupID": 4
+                  },
+                  {
+                    "TaxType": "IMPO",
+                    "TaxGroupID": 3
+                  }
+                ]
+              },
+              "MarketingCode": "16000000022300000690"
             },
             {
+              "EntryMethod": "Keyed",
               "SequenceNumber": 11,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "BeginDateTime": "2024-01-04T11:39:24",
+              "EndDateTime": "2024-01-04T11:39:24",
+              "Sale": {
+                "ItemType": "Stock",
+                "POSIdentity": {
+                  "POSItemID": "00000020036133"
+                },
+                "ItemID": {
+                  "Type": "SKU",
+                  "#text": "00000974884"
+                },
+                "MerchandiseHierarchy": [
+                  {
+                    "Level": "Department",
+                    "#text": "98"
+                  }
+                ],
+                "Description": "Ptos Bolsa Ecologica",
+                "TaxIncludedInPriceFlag": true,
+                "RegularSalesUnitPrice": "1.00",
+                "ActualSalesUnitPrice": "1.00",
+                "ExtendedAmount": "1.00",
+                "Quantity": "1.000",
+                "Tax": [
+                  {
+                    "TaxType": "IVA",
+                    "TaxSubType": "Excluded",
+                    "TaxGroupID": 0
+                  }
+                ]
+              },
+              "MarketingCode": "98000001008565001028"
             },
             {
               "SequenceNumber": 12,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 13,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 14,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 15,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 16,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 17,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 18,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 19,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 20,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 21,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 22,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 23,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 24,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 25,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00"
               }
             },
             {
               "SequenceNumber": 26,
-              "BeginDateTime": "2024-01-03T16:42:15",
+              "BeginDateTime": "2024-01-04T11:39:37",
               "Tender": {
                 "TenderType": "Cash",
                 "TypeCode": "Sale",
                 "TenderID": 1,
-                "Amount": "10000.00"
+                "Amount": "5000.00",
+                "TenderChange": {
+                  "TenderType": "Cash",
+                  "TenderID": 1,
+                  "Amount": "4400.00"
+                },
+                "Rounding": "-41.00"
               }
             },
             {
               "SequenceNumber": 27,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "1.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                }
+              ]
             },
             {
               "SequenceNumber": 28,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "47361.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                }
+              ]
             },
             {
               "SequenceNumber": 29,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "239.00",
+                  "BaseAmount": "1261.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                }
+              ]
             },
             {
               "SequenceNumber": 30,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "2259.00",
+                  "BaseAmount": "11886.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                }
+              ]
             },
             {
               "SequenceNumber": 31,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "3789.00",
+                  "BaseAmount": "47361.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ]
             },
             {
               "SequenceNumber": 32,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "3845.00",
+                  "BaseAmount": "11886.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 3
+                }
+              ]
             },
             {
               "SequenceNumber": 33,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "239.00",
+                  "BaseAmount": "1261.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000020898908"
+              },
+              "SequenceLineItem": [
+                1,
+                2,
+                3
+              ]
             },
             {
               "SequenceNumber": 34,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "34407.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "2753.00",
+                  "BaseAmount": "34407.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000020257514"
+              },
+              "SequenceLineItem": [
+                4,
+                5,
+                6,
+                7
+              ]
             },
             {
               "SequenceNumber": 35,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "0.00",
+                  "BaseAmount": "12954.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 0
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "1036.00",
+                  "BaseAmount": "12954.00",
+                  "Percent": "8.0",
+                  "TaxGroupID": 1
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000020272784"
+              },
+              "SequenceLineItem": [
+                8
+              ]
             },
             {
               "SequenceNumber": 36,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "1726.00",
+                  "BaseAmount": "9082.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "582.00",
+                  "BaseAmount": "9082.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 3
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000041024355"
+              },
+              "SequenceLineItem": [
+                9
+              ]
             },
             {
               "SequenceNumber": 37,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
+              "Tax": [
+                {
+                  "TaxType": "IVA",
+                  "Amount": "533.00",
+                  "BaseAmount": "2804.00",
+                  "Percent": "19.0",
+                  "TaxGroupID": 4
+                },
+                {
+                  "TaxType": "IMPO",
+                  "Amount": "3263.00",
+                  "BaseAmount": "2804.00",
+                  "Percent": "0.0",
+                  "TaxGroupID": 3
+                }
+              ],
+              "POSIdentity": {
+                "POSItemID": "00000077063342"
+              },
+              "SequenceLineItem": [
+                10
+              ]
             },
             {
               "SequenceNumber": 38,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 39,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 40,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 41,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 42,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 43,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 44,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 45,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 46,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 47,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 48,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 49,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 50,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 51,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 52,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00"
-              }
-            },
-            {
-              "SequenceNumber": 53,
-              "BeginDateTime": "2024-01-03T16:42:15",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "10000.00",
-                "TenderChange": {
-                  "TenderType": "Cash",
-                  "TenderID": 1,
-                  "Amount": "7000.00"
-                }
-              }
-            },
-            {
-              "SequenceNumber": 54,
-              "LoyaltyReward": {
-                "LoyaltyID": "1019041600",
-                "LoyaltyDocType": 13,
-                "LoyaltyModality": "DOC",
-                "LoyaltyTar": "131019041600"
-              }
-            },
-            {
-              "SequenceNumber": 55,
               "Tax": [
                 {
                   "TaxType": "IVA",
                   "Amount": "0.00",
-                  "BaseAmount": "513000.00",
-                  "Percent": "0.0",
-                  "TaxGroupID": 0
-                }
-              ]
-            },
-            {
-              "SequenceNumber": 56,
-              "Tax": [
-                {
-                  "TaxType": "IVA",
-                  "Amount": "0.00",
-                  "BaseAmount": "513000.00",
+                  "BaseAmount": "1.00",
                   "Percent": "0.0",
                   "TaxGroupID": 0
                 }
               ],
               "POSIdentity": {
-                "POSItemID": "00196742001846"
+                "POSItemID": "00000020036133"
               },
               "SequenceLineItem": [
-                1
+                11
               ]
             }
           ],
           "Total": [
             {
               "TotalType": "TransactionGrossAmount",
-              "Amount": "570000.00"
+              "Amount": "70641.00"
             },
             {
               "TotalType": "TransactionNetAmount",
-              "Amount": "513000.00"
+              "Amount": "60509.00"
             },
             {
               "TotalType": "TransactionBaseAmount",
-              "Amount": "513000.00"
-            },
-            {
-              "TotalType": "TransactionDiscountAmount",
-              "Amount": "57000.00"
+              "Amount": "70641.00"
             }
           ],
-          "Customer": {
-            "CustomerID": "1019041600",
-            "Name": "JUAN DANIEL",
-            "Address": null,
-            "Email": "J.DANIEL_A@HOTMAIL.COM",
-            "CustomerIDType": "13",
-            "Giro": "RODRIGUEZ AYALA JUAN DANIEL",
-            "TaxPayerCondition": [
-              "99"
-            ],
-            "ZipCode": ""
-          },
           "ElapsedTime": [
             {
               "Type": "Ring",
+              "Value": 83
+            },
+            {
+              "Type": "Tender",
               "Value": 10
-            },
-            {
-              "Type": "Tender",
-              "Value": 27
             }
           ],
           "FiscalInformation": {
-            "TipoDTE": "1",
             "FiscalCode": "1",
-            "FiscalReceiptNumber": "27",
+            "FiscalReceiptNumber": "119",
             "FiscalResetNumber": 1,
             "FiscalPosNumber": "0000",
             "FixedAsset": false,
             "FiscalSheetCount": 1,
-            "Prefix": "EA02",
+            "Prefix": "1N02",
             "Serial": "DTM67",
             "InitialResolution": 1,
-            "FinalResolution": 5999999,
-            "ResolutionNumber": "98765432109876",
-            "ResolutionBeginDate": "1 Marzo 2021",
-            "ResolutionEndDate": "1 Marzo 2023"
+            "FinalResolution": 4999999,
+            "ResolutionNumber": "12345678901234",
+            "ResolutionBeginDate": "1 Enero 2021",
+            "ResolutionEndDate": "1 Enero 2023"
           },
           "BillerOrderID": "POS",
           "Reward": [
             {
               "PromovarId": 350450,
-              "Value": 2600,
+              "Value": 375,
               "PromotionId": 25,
               "PromotionDescription": "Acumulacion Base",
               "RewardType": 16,
               "CostCenter": 0,
               "Trigger": 1,
               "ApplyTo": 1,
-              "QuantityApplied": 2600,
-              "ExtendedCostCenter": 0
-            }
-          ]
-        }
-      }
-    }
-  },
-  {
-    "PosLog": {
-      "Transaction": {
-        "RetailStoreID": 2301,
-        "WorkstationID": 2,
-        "SequenceNumber": 5421,
-        "BeginDateTime": "2024-01-03T16:48:43",
-        "EndDateTime": "2024-01-03T16:49:32",
-        "Operator": {
-          "EmployeeID": 1116666729,
-          "OperatorID": 17,
-          "CashierName": "Maquina Del Mal"
-        },
-        "CurrencyCode": "COP",
-        "ActionCode": 0,
-        "RetailTransaction": {
-          "Version": 2.2,
-          "ItemCount": 1,
-          "LineItem": [
-            {
-              "EntryMethod": "Keyed",
-              "SequenceNumber": 1,
-              "BeginDateTime": "2024-01-03T16:48:43",
-              "EndDateTime": "2024-01-03T16:48:43",
-              "Sale": {
-                "ItemType": "Stock",
-                "POSIdentity": {
-                  "POSItemID": "00196742001846"
-                },
-                "ItemID": {
-                  "Type": "SKU",
-                  "#text": "00003531798"
-                },
-                "MerchandiseHierarchy": [
-                  {
-                    "Level": "Department",
-                    "#text": "43"
-                  }
-                ],
-                "Description": "Tarjeta Playstatio",
-                "TaxIncludedInPriceFlag": true,
-                "RegularSalesUnitPrice": "570000.00",
-                "ActualSalesUnitPrice": "511707.00",
-                "ExtendedAmount": "511707.00",
-                "Quantity": "1.000",
-                "RetailPriceModifier": [
-                  {
-                    "MethodCode": "PriceOverride",
-                    "SequenceNumber": 1,
-                    "Amount": {
-                      "Action": "Subtract",
-                      "Amount": "1437.00"
-                    },
-                    "PreviousPrice": "570000.00",
-                    "ReasonCode": "2"
-                  },
-                  {
-                    "MethodCode": "Promotion",
-                    "SequenceNumber": 2,
-                    "Amount": {
-                      "Action": "Subtract",
-                      "Amount": "56856.00"
-                    },
-                    "PreviousPrice": "568563.00",
-                    "PromotionID": 114,
-                    "CostCenter": 100,
-                    "PromotionDescription": "10% DTO EMPLEADO"
-                  }
-                ],
-                "Tax": [
-                  {
-                    "TaxType": "IVA",
-                    "TaxSubType": "Excluded",
-                    "TaxGroupID": 0
-                  }
-                ]
-              },
-              "MarketingCode": "43210000013630001099"
-            },
-            {
-              "SequenceNumber": 2,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 3,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 4,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 5,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 6,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 7,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 8,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 9,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 10,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 11,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00"
-              }
-            },
-            {
-              "SequenceNumber": 12,
-              "BeginDateTime": "2024-01-03T16:49:32",
-              "Tender": {
-                "TenderType": "Cash",
-                "TypeCode": "Sale",
-                "TenderID": 1,
-                "Amount": "50000.00",
-                "TenderChange": {
-                  "TenderType": "Cash",
-                  "TenderID": 1,
-                  "Amount": "38300.00"
-                },
-                "Rounding": "-7.00"
-              }
-            },
-            {
-              "SequenceNumber": 13,
-              "LoyaltyReward": {
-                "LoyaltyID": "1019041600",
-                "LoyaltyDocType": 13,
-                "LoyaltyModality": "DOC",
-                "LoyaltyTar": "131019041600"
-              }
-            },
-            {
-              "SequenceNumber": 14,
-              "Tax": [
-                {
-                  "TaxType": "IVA",
-                  "Amount": "0.00",
-                  "BaseAmount": "511707.00",
-                  "Percent": "0.0",
-                  "TaxGroupID": 0
-                }
-              ]
-            },
-            {
-              "SequenceNumber": 15,
-              "Tax": [
-                {
-                  "TaxType": "IVA",
-                  "Amount": "0.00",
-                  "BaseAmount": "511707.00",
-                  "Percent": "0.0",
-                  "TaxGroupID": 0
-                }
-              ],
-              "POSIdentity": {
-                "POSItemID": "00196742001846"
-              },
-              "SequenceLineItem": [
-                1
-              ]
-            }
-          ],
-          "Total": [
-            {
-              "TotalType": "TransactionGrossAmount",
-              "Amount": "570000.00"
-            },
-            {
-              "TotalType": "TransactionNetAmount",
-              "Amount": "511707.00"
-            },
-            {
-              "TotalType": "TransactionBaseAmount",
-              "Amount": "511707.00"
-            },
-            {
-              "TotalType": "TransactionDiscountAmount",
-              "Amount": "56856.00"
-            }
-          ],
-          "Customer": {
-            "CustomerID": "1019041600",
-            "Name": "JUAN DANIEL",
-            "Address": null,
-            "Email": "J.DANIEL_A@HOTMAIL.COM",
-            "CustomerIDType": "13",
-            "Giro": "RODRIGUEZ AYALA JUAN DANIEL",
-            "TaxPayerCondition": [
-              "99"
-            ],
-            "ZipCode": ""
-          },
-          "ElapsedTime": [
-            {
-              "Type": "Ring",
-              "Value": 28
-            },
-            {
-              "Type": "Tender",
-              "Value": 21
-            }
-          ],
-          "FiscalInformation": {
-            "TipoDTE": "1",
-            "FiscalCode": "1",
-            "FiscalReceiptNumber": "28",
-            "FiscalResetNumber": 1,
-            "FiscalPosNumber": "0000",
-            "FixedAsset": false,
-            "FiscalSheetCount": 1,
-            "Prefix": "EA02",
-            "Serial": "DTM67",
-            "InitialResolution": 1,
-            "FinalResolution": 5999999,
-            "ResolutionNumber": "98765432109876",
-            "ResolutionBeginDate": "1 Marzo 2021",
-            "ResolutionEndDate": "1 Marzo 2023"
-          },
-          "BillerOrderID": "POS",
-          "Reward": [
-            {
-              "PromovarId": 350450,
-              "Value": 2750,
-              "PromotionId": 25,
-              "PromotionDescription": "Acumulacion Base",
-              "RewardType": 16,
-              "CostCenter": 0,
-              "Trigger": 1,
-              "ApplyTo": 1,
-              "QuantityApplied": 2750,
+              "QuantityApplied": 375,
               "ExtendedCostCenter": 0
             }
           ]
