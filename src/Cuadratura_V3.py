@@ -125,15 +125,13 @@ def obtener_medio_pago(data):
                 listado_medios.append(medios)
                 ajuste = True
             else:
-                continue
-
-            if "Donation" in item_interno["Tender"]:
-                medios["Redondeo"] = None
-                medios["Donacion"] = float(item_interno["Tender"]["Donation"])
-                listado_medios.append(medios)
-                ajuste = True
-            else:
-                continue
+                if "Donation" in item_interno["Tender"]:
+                    medios["Redondeo"] = None
+                    medios["Donacion"] = float(item_interno["Tender"]["Donation"])
+                    listado_medios.append(medios)
+                    ajuste = True
+                else:
+                    continue
 
     if ajuste:
         print("")
